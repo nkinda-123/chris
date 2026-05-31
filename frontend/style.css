@@ -394,3 +394,116 @@ footer {
   color: var(--gray);
   font-size: 0.85rem;
 }
+
+
+/* ========== MOBILE RESPONSIVE ========== */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  #navbar {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  /* HERO */
+  #hero {
+    padding: 120px 20px 60px;
+  }
+
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 40px;
+  }
+
+  #hero-name {
+    font-size: 2.2rem;
+  }
+
+  #hero-title {
+    font-size: 1rem;
+  }
+
+  #hero-bio {
+    font-size: 0.88rem;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .photo-frame {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    box-shadow: 6px 6px 0px var(--yellow2);
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 60px 20px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+  }
+
+  /* ABOUT */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* SKILLS */
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* EDUCATION */
+  .education-card {
+    padding: 20px;
+  }
+
+  .education-card:hover {
+    transform: none;
+  }
+
+  /* CONTACT */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 0.75rem;
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  #hero-name { font-size: 1.8rem; }
+  .skills-grid { grid-template-columns: 1fr; }
+  .nav-links { gap: 10px; }
+  .nav-links a { font-size: 0.7rem; }
+}
